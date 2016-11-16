@@ -19,13 +19,18 @@ function gft_default_post_thumbnail_html( $html, $post_ID, $post_thumbnail_id, $
 
         if( $default_image_id ){
 
-            $size_class = $size;
-            if ( is_array( $size_class ) ) {
-                $size_class = join( 'x', $size_class );
-            }
-            $size_class .= "attachment-$size_class size-$size_class wp-post-image";
+            if( ! ( isset( $attr['class'] ) && ! empty( $attr['class'] ) ) ){
 
-            $html = wp_get_attachment_image( $default_image_id, $size, false, array( 'class' => $size_class) );
+                $size_class = $size;
+                if ( is_array( $size_class ) ) {
+                    $size_class = join( 'x', $size_class );
+                }
+                $size_class .= "attachment-$size_class size-$size_class wp-post-image";
+
+                $attr['class'] = $size_class;
+            }
+
+            $html = wp_get_attachment_image( $default_image_id, $size, false, $attr );
         }
 
 
