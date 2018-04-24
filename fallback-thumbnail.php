@@ -27,6 +27,9 @@ function gft_default_post_thumbnail_html( $html, $post_ID, $post_thumbnail_id, $
                 }
                 $size_class .= "attachment-$size_class size-$size_class wp-post-image";
 
+                if( $attr == '' ){
+                    $attr = array();
+                }
                 $attr['class'] = $size_class;
             }
 
