@@ -1,0 +1,15 @@
+{
+    "name": "arnaudban/fallback-thumbnail",
+    "description": "WordPress plugin to add default falback to post thumbnail",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ArnaudBan",
+            "email": "arnaud@banvillet.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    }
+}
