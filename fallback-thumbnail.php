@@ -3,8 +3,8 @@
 Plugin Name: Fallback thumbnail
 Description: Set a default fallback thumbnail. Your posts will always have a thumbnail.
 Version: 1.0
-Author: Studio Goliath
-Author URI: http://www.studio-goliath.com/
+Author: ArnaudBan
+Author URI: https://arnaudban.me/
 */
 
 
